@@ -1,4 +1,4 @@
-## Welcome to the project page of "A Hierarchical Pproach for Strategic Motion Planning in Autonomous Racing"
+## Welcome to the project page of "A Hierarchical Approach for Strategic Motion Planning in Autonomous Racing"
 
 This work is related to an ECC 2023 submission by Rudolf Reiter, Jasper Hoffmann, Joschka Boedecker and Moritz Diehl.
 
