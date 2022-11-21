@@ -8,6 +8,10 @@ An approach is presented for safe trajectory planning, where a strategic task re
 The ego vehilce starts first and has to block three stronger opponents. "Stronger" relates to parameters such as vehicle mass, accelerations limits and available braking force.
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/Pp5qHcdNGQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Scenario 2: Overtake
+The ego vehilce starts last and has to overtake three weaker opponents. "Weaker" relates to parameters such as vehicle mass, accelerations limits and available braking force.
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/0yV2myOdsW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Scenario 3: Mixed
 The ego vehicle starts between a stronger following and a weaker leading vehicle and has to safely overtake as well as block the following opponent in order to achieve a good rank for as long as possible.
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/muco3XlAByM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
