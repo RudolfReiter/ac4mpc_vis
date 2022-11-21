@@ -1,19 +1,16 @@
-## Welcome to the project of Frenet/Cartesian lifting for obstacle avoidance within nonlinear MPC
+## Welcome to the project page of "A Hierarchical Pproach for Strategic Motion Planning in Autonomous Racing"
 
-This work is related to an ECC 2023 submission by Rudolf Reiter, Armin Nurcanovic, Jonathan Frey and Moritz Diehl.
+This work is related to an ECC 2023 submission by Rudolf Reiter, Jasper Hoffmann, Joschka Boedecker and Moritz Diehl.
 
-In the following we show three different MPC formulations of obstacle avoidance. In the first animation we see a naive formulation of the obstacle constraints in the Frenet frame, where obstacle deformations are ignored. Due to the wrong constraints this formulation leads to a crash. In the second animation the obstalce avoidance in the Frenet frame is over-approximated, which leads to collision avoidance but unnecessary defensive behavior. In the third video, we show the porposed algorithm, where the obstacle avoidance is formulated in the Cartesian coordinate system, whereas the road constraints and progress are formulated in the Frenet coordinate frame.
+An approach is presented for safe trajectory planning, where a strategic task related to autonomous racing is learned within a simulation environment. The following videos show evaluations of the trained HILEPP-II policy in different scenarios related to autonomous racing tasks. Opponent vehicles are simualted with an obstacle avoiding MPC formulations for autonomous racing, which not explicitly considers strategic driving (PPP)
 
-## MPC obstacle avoidance without lifting
-In the following rendered simulation, the collision avoidance constraints are naively formulated in the Frenet frame. On the left, the Cartesian coordinate frame is shown, on the right, the Frenet frame is shown, which is a road aligned coordinate system. The shape of the obstacle is assumed to be the same in the Frenet frame and formulated by simple collision avoidance constraints emerging from the Cartesian frame. The resulting optimization problem does not capture the true shape and consequently, a crash occurs.
-<iframe width="1200" height="600" src="https://www.youtube.com/embed/z-pKW0YeRaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Scenario 1: Blocking
+The ego vehilce starts first and has to block three stronger opponents. "Stronger" relates to parameters such as vehicle mass, accelerations limits and available braking force.
+<<iframe width="560" height="315" src="https://www.youtube.com/embed/Pp5qHcdNGQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## MPC obstacle avoidance without lifting and increased safety distances
-A simple fix of the above collision due to the wrong captured shape are over-approximations of the non-convex obstacle shape in the Frenet frame . Obviously, the over-approximation is restrictive and leads to a conservative behavior. It can be seen how a simple Cartesian obstacle shape (rectangle) is transformed to a non-convex shape in the Frenet frame, thus making its constraint formulation within the MPC formulation more challenging.
-<iframe width="1200" height="600" src="https://www.youtube.com/embed/9h2oaFButNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Scenario 3: Mixed
+The ego vehicle starts between a stronger following and a weaker leading vehicle and has to safely overtake as well as block the following opponent in order to achieve a good rank for as long as possible.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/muco3XlAByM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## MPC obstacle avoidance with the "lifted ODE" or "direct elimination" formulation
-The following rendering of a simulation of the proposed Frenet-Cartesian MPC formulation shows a successfull overtaking maneuver. The obstacle avoidance constraints are formulated in the Cartesian frame, whereas the boundary constraints and reference tracking are formulated in the Frenet frame. 
-<iframe width="1200" height="600" src="https://www.youtube.com/embed/I2FuciVrCw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
