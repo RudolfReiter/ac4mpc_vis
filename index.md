@@ -2,7 +2,7 @@
 
 This work is related to an IEEE journal submission by Rudolf Reiter, Armin Nurkanovic, Daniele Bernardini, Moritz Diehl and Alberto Bemporad.
 
-The following simulations show, how the LSTMP plans and executes lane changes in closed-loop simulations. Each simulation consists of randomized surrounding vehicles with different speeds. Surrounding vehilces break, if they are close to a leading vehicle. The the planner uses a safe short-term trajectory (black) to plan the first lane change and uses transition gaps for long-term transition planning. The full planning problem is formualated as MIQP and solved in approximately 50ms.
+The following simulations show, how the LSTMP plans and executes lane changes in closed-loop simulations. Each simulation consists of randomized surrounding vehicles with different speeds. Surrounding vehilces break, if they are close to a leading vehicle. The the planner uses a safe short-term trajectory (black) to plan the first lane change and uses transition points in the spatio-temporal space for long-term planning (green). The full planning problem is formualated as MIQP and solved in approximately 50ms.
 
 ### Scenario 1:
 <iframe width="1500" height="270" src="https://www.youtube.com/embed/CeCAHv8LY2E?si=3FVuynT9DnRx3wyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
