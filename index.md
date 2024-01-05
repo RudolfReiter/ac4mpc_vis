@@ -6,7 +6,7 @@ An approach is presented for safe trajectory planning, where a strategic task re
 
 ## Scenario 1:
 The ego vehilce starts first and has to block three stronger opponents. "Stronger" relates to parameters such as vehicle mass, accelerations limits and available braking force.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CeCAHv8LY2E?si=3FVuynT9DnRx3wyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1560" height="315" src="https://www.youtube.com/embed/CeCAHv8LY2E?si=3FVuynT9DnRx3wyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 
