@@ -7,10 +7,13 @@ The following simulations show, how the LSTMP plans and executes lane changes in
 ### Scenario 1:
 LSTMP:
 <iframe width="1500" height="270"  src="https://www.youtube.com/embed/mjTDH2EOvLA?si=CvwAPcT6aIt0CYcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 A-star:
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/O2Nng0nPqAg?si=6_XLSObHxZZizbBn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 MIPDM (N=15):
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/Gu-LHjxLqlg?si=oMPzSqDrZrGq8-zO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 MIPDM (N=20):
 <iframe  width="1500" height="270" src="https://www.youtube.com/embed/cOM4uULTNr8?si=aQcqcx6IzNLnjmu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -18,9 +21,12 @@ MIPDM (N=20):
 ### Scenario 2:
 LSTMP:
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/GlhYKSTqog0?si=olEU7QSo764VBDYy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 A-star:
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/ymD1YXdINt0?si=a652u8PQ-1GGQSRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 MIPDM (N=15):
 <iframe  width="1500" height="270" src="https://www.youtube.com/embed/ODomLqjXqAw?si=Pr-9ZozTmNY9uYUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 MIPDM (N=20):
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/drMFY6f_KVk?si=Sv62XTeLdaS-YX8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
