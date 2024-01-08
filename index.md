@@ -1,8 +1,9 @@
-## Welcome to the project page of "A Long-Short-Term Mixed-Integer Formulation for Highway Motion Planning"
+# Welcome to the project page of "A Long-Short-Term Mixed-Integer Formulation for Highway Motion Planning"
 
 This work is related to an IEEE journal submission by Rudolf Reiter, Armin Nurkanovic, Daniele Bernardini, Moritz Diehl and Alberto Bemporad.
 
-The following simulations show, how the LSTMP plans and executes lane changes in closed-loop simulations. Each simulation consists of randomized surrounding vehicles with different speeds. Surrounding vehilces break, if they are close to a leading vehicle. The the planner uses a safe short-term trajectory (black) to plan the first lane change and uses transition points in the spatio-temporal space for long-term planning (green). The full planning problem is formualated as MIQP and solved in approximately 50ms.
+## Deterministic Planning - Comparison of Planners
+The following simulations show, how the LSTMP, the A-star planner and the MIPDM plan and execute lane changes in deterministic closed-loop simulations. Each simulation consists of randomized surrounding vehicles with different speeds. Surrounding vehilces break, if they are close to a leading vehicle. The the LSTMP uses a safe short-term trajectory (black) to plan the first lane change and uses transition points in the spatio-temporal space for long-term planning (green). The full planning problem is formualated as MIQP and solved in approximately 50ms.
 
 ### Scenario 1:
 LSTMP:
@@ -30,3 +31,11 @@ MIPDM (N=15):
 
 MIPDM (N=20):
 <iframe  width="1500" height="270"  src="https://www.youtube.com/embed/drMFY6f_KVk?si=Sv62XTeLdaS-YX8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+## Interactive SUMO Simulations
+In the following, interactive sumo simulations based on CommonRoad scenarios are shown. The planner aims to safely reach the left-most lane.
+
+### Scenario US101-22_1_I-1-1:
+
+### Scenario DEU_Cologne-63_5_I-1:
