@@ -1,45 +1,9 @@
-# Welcome to the project page of "A Long-Short-Term Mixed-Integer Formulation for Highway Motion Planning"
+# Welcome to the project page of "AC4MPC: Actor Critic Reinforcement Learning for Model Predictive Control"
 
-This work is related to an IEEE journal submission by Rudolf Reiter, Armin Nurkanovic, Daniele Bernardini, Moritz Diehl and Alberto Bemporad.
+This work is related to an IEEE journal submission by Rudolf Reiter, Andrea Ghezzi, Jasper Hoffmann, Katrin Baumgärtner, Robert McAllister and Moritz Diehl.
 
-## Deterministic Planning - Comparison of Planners
-The following simulations show, how the LSTMP, the A-star planner and the MIPDM plan and execute lane changes in deterministic closed-loop simulations. Each simulation consists of randomized surrounding vehicles with different speeds. Surrounding vehilces break, if they are close to a leading vehicle. The the LSTMP uses a safe short-term trajectory (black) to plan the first lane change and uses transition points in the spatio-temporal space for long-term planning (green). The full planning problem is formualated as MIQP and solved in approximately 50ms.
+## Comparison of Control Algorithms
+The following simulations show, how the AC4MPC-RTI outperforms an reinforcement learning (RL) algorithm and a standard nonlinear model predictive controller (NMPC) on an autonomous driving overtaking task. NMPC is prone to get stuck into local minima and the RL agent performs considerably suboptimal. The RL agent was trained by soft actor critic learning in 10 Million randomized simulations. The actor and the critic network are used within AC4MPC-RTI as initial guess and terminal value function. The NMPC and the AC4MPC-RTI have a horizon length of 30 and a discretization time of 0.1 seconds. The vehicle parameters are taken from the DevBot 2.0 (roborace.com). Further details can be found in the related submission. 
 
-### Scenario 1:
-LSTMP:
-<iframe width="1500" height="270"  src="https://www.youtube.com/embed/mjTDH2EOvLA?si=CvwAPcT6aIt0CYcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-A-star:
-<iframe  width="1500" height="270"  src="https://www.youtube.com/embed/O2Nng0nPqAg?si=6_XLSObHxZZizbBn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-MIPDM (N=15):
-<iframe  width="1500" height="270"  src="https://www.youtube.com/embed/Gu-LHjxLqlg?si=oMPzSqDrZrGq8-zO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-MIPDM (N=20):
-<iframe  width="1500" height="270" src="https://www.youtube.com/embed/cOM4uULTNr8?si=aQcqcx6IzNLnjmu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-### Scenario 2:
-LSTMP:
-<iframe  width="1500" height="270"  src="https://www.youtube.com/embed/GlhYKSTqog0?si=olEU7QSo764VBDYy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-A-star:
-<iframe  width="1500" height="270"  src="https://www.youtube.com/embed/ymD1YXdINt0?si=a652u8PQ-1GGQSRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-MIPDM (N=15):
-<iframe  width="1500" height="270" src="https://www.youtube.com/embed/ODomLqjXqAw?si=Pr-9ZozTmNY9uYUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-MIPDM (N=20):
-<iframe  width="1500" height="270"  src="https://www.youtube.com/embed/drMFY6f_KVk?si=Sv62XTeLdaS-YX8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-## Interactive SUMO Simulations
-In the following, interactive sumo simulations based on CommonRoad scenarios are shown. The planner aims to safely reach the left-most lane.
-
-### Scenario US101-22_1_I-1-1:
-<iframe width="560" height="560" src="https://www.youtube.com/embed/_fnJm23fv94?si=dTQFVWMB6A6T0DCd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="560" src="https://www.youtube.com/embed/HDoraDz1txQ?si=upYQdJmU4sg_SlTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="560" src="https://www.youtube.com/embed/yIo6oIsun4A?si=15_GNWhM03z5dyTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="560" src="https://www.youtube.com/embed/nnrN-H4GBpQ?si=PgMGmysQphJwUYmC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Scenario DEU_Cologne-63_5_I-1:
-<iframe width="560" height="560" src="https://www.youtube.com/embed/M6Y-wlt4WGM?si=CIMY3IJiGPh0SKr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="560" src="https://www.youtube.com/embed/rgI9QYeyGkA?si=ySZYjF3rE-LiOve5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="560" height="560" src="https://www.youtube.com/embed/v1rjkmMVyNc?si=8z4oPueASl1Bq12c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><iframe width="560" height="560" src="https://www.youtube.com/embed/rA55UnTbd_o?si=4xvWMmJzhpxjKvzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1560" height="519" src="https://www.youtube.com/embed/7_xTmU4gOKc" title="Autonomous Driving Simulation 2: Comparison of RL, MPC and AC4MPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1560" height="519" src="https://www.youtube.com/embed/rKVXq3VkC9o" title="Autonomous Driving Simulation 1: Comparison of RL, MPC and AC4MPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
