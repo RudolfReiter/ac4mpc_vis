@@ -15,4 +15,4 @@ The following simulations show, how the AC4MPC-RTI outperforms an reinforcement 
 <iframe width="1560" height="519" src="https://www.youtube.com/embed/pwMVS6dlFMs" title="Autonomous Driving Simulation 3: Comparison of RL, MPC and AC4MPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br />
 
-<iframe width="1560" height="519" src="https://www.youtube.com/embed/oTr-dbKaJ8s?rel=0&modestbranding=1" title="Autonomous Driving Simulation 4: Comparison of RL, MPC and AC4MPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1560" height="519" src="https://www.youtube.com/embed/oTr-dbKaJ8s?rel=0&modestbranding=1&autoplay=1&loop=1" title="Autonomous Driving Simulation 4: Comparison of RL, MPC and AC4MPC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
